@@ -50,9 +50,6 @@ class Program
                     world.player.direction = "Left";
                     break;
 
-
-                    // TODO Lägg till logik för andra knapptryckningar
-                    // ...
             }
 
             // Uppdatera världen och rendera om

@@ -11,7 +11,11 @@ namespace SnakeSpel
         public int Score = 0;
         public List<GameObject> gameObjects = new List<GameObject>();
         public Player player = new Player();
-        
+
+      
+        /// <summary>
+        /// Method for creating food. If no food exists it creates a new one.
+        /// </summary>
         public void AddFood()
         {
             if(gameObjects.Count < 2)
@@ -28,27 +32,28 @@ namespace SnakeSpel
                 gameObjects.Add(food);
             }
         }
-
+        /// <summary>
+        /// This method deletes  the food and adds +1 to the score if the player runs over Food
+        /// </summary>
         public void EatFood()
         {
           
-
             if (gameObjects[0].Position.X == gameObjects[1].Position.X && gameObjects[0].Position.Y == gameObjects[1].Position.Y)
             {
                 gameObjects.RemoveAt(1);
                 Score++;
             }
-          
-           
-
         }
-        
-        
-        
+        /// <summary>
+        /// Adds player to the gameworld
+        /// </summary>
         public GameWorld()
         {
             gameObjects.Add(player);
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void Update()
         {
             AddFood();
