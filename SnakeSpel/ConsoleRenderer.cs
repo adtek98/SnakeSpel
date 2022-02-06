@@ -30,11 +30,9 @@ namespace SnakeSpel
                 
             }
 
-            //for (int i = 0; i)
+            
 
-            // TODO Rendera spelvärlden (och poängräkningen)
-
-            // Använd Console.SetCursorPosition(int x, int y) and Console.Write(char)
+            
         }
 
         public void RenderBlank()

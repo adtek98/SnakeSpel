@@ -2,6 +2,8 @@
 
 class Program 
 { 
+    // Har lagt till så att maten har varierande utseende
+
     /// <summary>
     /// Checks Console to see if a keyboard key has been pressed, if so returns it, otherwise NoName.
     /// </summary>
@@ -50,9 +52,6 @@ class Program
                     world.player.direction = "Left";
                     break;
 
-
-                    // TODO Lägg till logik för andra knapptryckningar
-                    // ...
             }
 
             // Uppdatera världen och rendera om

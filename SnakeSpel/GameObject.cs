@@ -8,7 +8,6 @@ namespace SnakeSpel
     
     abstract class GameObject
     {
-        
         public Position Position = new Position();
         public char Appearance;
 

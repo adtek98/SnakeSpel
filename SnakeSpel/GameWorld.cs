@@ -16,7 +16,7 @@ namespace SnakeSpel
         {
             if(gameObjects.Count < 2)
             {
-                char[] FoodAppearance = { '*', '$', '@', '¤' };
+                char[] FoodAppearance = { '*', '$', '@', '¤'};
                 Random rnd = new Random();
                 int rndFood = rnd.Next(0,4);
                 int posX = rnd.Next(0, 50);
@@ -32,14 +32,11 @@ namespace SnakeSpel
         public void EatFood()
         {
           
-
             if (gameObjects[0].Position.X == gameObjects[1].Position.X && gameObjects[0].Position.Y == gameObjects[1].Position.Y)
             {
                 gameObjects.RemoveAt(1);
                 Score++;
             }
-          
-           
 
         }
         
@@ -53,6 +50,8 @@ namespace SnakeSpel
         {
             AddFood();
             EatFood();
+            
+
             foreach(var x in gameObjects)
             {
                 x.Update();
