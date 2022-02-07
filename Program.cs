@@ -1,10 +1,11 @@
 ﻿using SnakeSpel;
 
-        //Programmet skapar en spelplan, ett objekt i klassen Player och ett objekt
-        //i klassen Food. Vidare har användaren möjlighet att styra objektet (ormen)
-        //med hjälp av pilknapparna och ställa in det i önskad riktning. Om ormen 
-        //landar på den position där Food-objektet finns, får användaren en poäng 
-        //och ett nytt objekt av klassen Food dyker upp på fältet.
+//Programmet skapar en spelplan, ett objekt i klassen Player och ett objekt
+//i klassen Food. Vidare har användaren möjlighet att styra objektet (ormen)
+//med hjälp av pilknapparna och ställa in det i önskad riktning. Om ormen 
+//landar på den position där Food-objektet finns, får användaren en poäng 
+//och ett nytt objekt av klassen Food dyker upp på fältet.
+
 
 
 class Program 
