@@ -9,23 +9,21 @@ class Program
     /// </summary>
     static ConsoleKey ReadKeyIfExists() => Console.KeyAvailable ? Console.ReadKey(intercept: true).Key : ConsoleKey.NoName;
 
+    /// <summary>
+    /// Metoden där spelet initieras och loopen startas.
+    /// </summary>
     static void Loop()
     {
         // Initialisera spelet
         const int frameRate = 5;
         GameWorld world = new GameWorld();
-        ConsoleRenderer renderer = new ConsoleRenderer(world);
-
-        // TODO Skapa spelare och andra objekt etc. genom korrekta anrop till vår GameWorld-instans
-        // ...
-        
-    
-
-    // Huvudloopen
+        ConsoleRenderer renderer = new ConsoleRenderer(world);      
+            
         bool running = true;
-        while (running)
+
+        while (running) // Huvudloopen
         {
-            // Kom ihåg vad klockan var i början
+            // Ställa in starttiden för spelet.
             DateTime before = DateTime.Now;
 
             // Hantera knapptryckningar från användaren

@@ -1,11 +1,16 @@
 {
   "profiles": {
     "SnakeSpel": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\Margo\\Desktop\\TUC\\Programmering NET fördjupning\\Snake_Gruppuppgift\\SnakeSpel",
+      "environmentVariables": {
+        "Ключ": "Значение"
+      },
+      "remoteDebugEnabled": false,
+      "nativeDebugging": true
     },
     "WSL": {
       "commandName": "WSL2",
-      "environmentVariables": {},
       "distributionName": ""
     }
   }

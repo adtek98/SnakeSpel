@@ -15,8 +15,13 @@ namespace SnakeSpel
         }
         
         public string direction;
-        
 
+
+        /// <summary>
+        /// Logiken i objektrörelsen beror
+        /// på vilken knapp användaren trycker på. 
+        /// Spåra ett föremåls rörelse utanför spelplanen.
+        /// </summary>
         public override void Update()
         {
             if(direction == "Up")

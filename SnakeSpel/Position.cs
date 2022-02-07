@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SnakeSpel
 {
+    /// <summary>
+    /// Skapa en position (punkt) i konsolen.
+    /// </summary>
     internal class Position
     {
         public int X;
