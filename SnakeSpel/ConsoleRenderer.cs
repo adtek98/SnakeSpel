@@ -10,7 +10,7 @@ namespace SnakeSpel
         private GameWorld world;
 
         /// <summary>
-        /// Konfigurera Console-fönstret enligt världens storlek
+        /// Konfigurerar Console-fönstret enligt världens storlek
         /// </summary>
         /// <param name="gameWorld">Objekt av klass GameWorld</param>
         public ConsoleRenderer(GameWorld gameWorld)
@@ -20,24 +20,24 @@ namespace SnakeSpel
         }
 
         /// <summary>
-        /// Visualisering av objekt i konsolen
+        /// Renderar alla objekt på spelplanen
         /// </summary>
         public void Render()
         {
             Console.CursorVisible = false;
-            Console.WriteLine(world.Score);
+            Console.WriteLine("Score: " + world.Score);
           
             foreach (var Object in world.gameObjects)
             {
-                Console.SetCursorPosition(Object.Position.X, Object.Position.Y);//Beteckning för varje objekts position                
-                Console.Write(Object.Appearance);//Utseendebeteckning för ett objekt                
+                Console.SetCursorPosition(Object.Position.X, Object.Position.Y); //Beteckning för varje objekts position                
+                Console.Write(Object.Appearance); //Utseendebeteckning för ett objekt                
             }
 
         }
 
         /// <summary>
         /// Metoden går igenom alla renderbara objekt i 
-        /// WORLD och ritar utrymmen vid varje position.
+        /// WORLD och skriver blanka utrymmen vid varje position.
         /// </summary>
         public void RenderBlank()
         {

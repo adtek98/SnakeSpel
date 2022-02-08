@@ -2,7 +2,7 @@
   "profiles": {
     "SnakeSpel": {
       "commandName": "Project",
-      "workingDirectory": "C:\\Users\\Margo\\Desktop\\TUC\\Programmering NET fördjupning\\Snake_Gruppuppgift\\SnakeSpel",
+      "workingDirectory": "C:\\Users\\adria\\source\\repos\\SnakeSpel",
       "environmentVariables": {
         "Ключ": "Значение"
       },

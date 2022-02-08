@@ -7,8 +7,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="C:\Users\Margo\Desktop\TUC\Programmering NET fördjupning\Snake_Gruppuppgift\Program.cs" Link="Program.cs" />
-  </ItemGroup>
+
 
 </Project>

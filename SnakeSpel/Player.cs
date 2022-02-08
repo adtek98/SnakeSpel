@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace SnakeSpel 
+﻿namespace SnakeSpel
 {
     internal class Player : GameObject
     {
+        /// <summary>
+        /// Konstruktor för player med Appearance för hur den ska se ut.
+        /// </summary>
         public Player()
         {
             Appearance = '#';
@@ -16,11 +12,9 @@ namespace SnakeSpel
         
         public string direction;
 
-
         /// <summary>
-        /// Logiken i objektrörelsen beror
-        /// på vilken knapp användaren trycker på. 
-        /// Spåra ett föremåls rörelse utanför spelplanen.
+        /// Logik för hur Player ska röra sig när man trycker ner piltangenterna.
+        /// Skickar tillbaka Player till spelplanen ifall den går ur den.
         /// </summary>
         public override void Update()
         {

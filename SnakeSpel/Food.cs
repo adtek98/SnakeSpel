@@ -8,7 +8,9 @@ namespace SnakeSpel
 {
     internal class Food : GameObject
     {
-        
+        /// <summary>
+        /// Konstruktor för Food med Appearance för hur den ska se ut.
+        /// </summary>
         public Food()
         {
             Appearance = ' ';

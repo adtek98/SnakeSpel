@@ -6,6 +6,10 @@ namespace SnakeSpel
 {
     class GameWorld
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
         public int Width = 51;
         public int Height = 21;
         public int Score = 0;
@@ -14,7 +18,8 @@ namespace SnakeSpel
 
 
         /// <summary>
-        /// Method for creating food. If no food exists it creates a new one.
+        /// Metod som skapar food, om ingen Food existerar så skapar den en ny.
+        /// Ger Food slumpmässigt utseende utifrån symbolerna i FoodAppearance
         /// </summary>
         public void AddFood()
         {
@@ -33,7 +38,7 @@ namespace SnakeSpel
             }
         }
         /// <summary>        
-        /// Denna metod tar bort food och lägger till +1 till score om spelaren kör över food
+        /// Tar bort food och lägger till +1 till score om spelaren "äter" Food
         /// </summary>
         public void EatFood()
         {
@@ -60,8 +65,7 @@ namespace SnakeSpel
         {
             AddFood();
             EatFood();
-            
-
+   
             foreach(var x in gameObjects)
             {
                 x.Update();
