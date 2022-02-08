@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+   
 namespace SnakeSpel
 {
     class GameWorld
@@ -9,10 +9,10 @@ namespace SnakeSpel
         public int Width = 51;
         public int Height = 21;
         public int Score = 0;
-        public List<GameObject> gameObjects = new List<GameObject>();
-        public Player player = new Player();
+        public List<GameObject> gameObjects = new List<GameObject>();//Skapa en lista med objekt GameObject
+        public Player player = new Player();//Skapa en ny spelare
 
-      
+
         /// <summary>
         /// Method for creating food. If no food exists it creates a new one.
         /// </summary>
@@ -32,8 +32,8 @@ namespace SnakeSpel
                 gameObjects.Add(food);
             }
         }
-        /// <summary>
-        /// This method deletes  the food and adds +1 to the score if the player runs over Food
+        /// <summary>        
+        /// Denna metod tar bort food och lägger till +1 till score om spelaren kör över food
         /// </summary>
         public void EatFood()
         {
@@ -43,19 +43,18 @@ namespace SnakeSpel
                 gameObjects.RemoveAt(1);
                 Score++;
             }
-          
-           
 
         }
         /// <summary>
-        /// Adds player to the gameworld
+        /// Lägger till spelare till gameworld
         /// </summary>
         public GameWorld()
         {
             gameObjects.Add(player);
         }
+
         /// <summary>
-        /// 
+        /// Uppdatera food positioner 
         /// </summary>
         public void Update()
         {

@@ -1,11 +1,21 @@
 ﻿using SnakeSpel;
 
+//Programmet skapar en spelplan, ett objekt i klassen Player och ett objekt
+//i klassen Food. Vidare har användaren möjlighet att styra objektet (ormen)
+//med hjälp av pilknapparna och ställa in det i önskad riktning. Om ormen 
+//landar på den position där Food-objektet finns, får användaren en poäng 
+//och ett nytt objekt av klassen Food dyker upp på fältet.
+
+
+
 class Program 
-{ 
+{
     // Har lagt till så att maten har varierande utseende
 
     /// <summary>
-    /// Checks Console to see if a keyboard key has been pressed, if so returns it, otherwise NoName.
+    /// Kontrollerar konsolen för att se om en tangent på 
+    /// tangentbordet har tryckts ned, returnerar den i så fall,
+    /// annars NoName.
     /// </summary>
     static ConsoleKey ReadKeyIfExists() => Console.KeyAvailable ? Console.ReadKey(intercept: true).Key : ConsoleKey.NoName;
 
@@ -49,7 +59,6 @@ class Program
                 case ConsoleKey.LeftArrow:
                     world.player.direction = "Left";
                     break;
-
             }
 
             // Uppdatera världen och rendera om
@@ -57,20 +66,18 @@ class Program
             world.Update();
             renderer.Render();
 
-            // Mät hur lång tid det tog
+            // Beräkning av speltid
             double frameTime = Math.Ceiling((1000.0 / frameRate) - (DateTime.Now - before).TotalMilliseconds);
             if (frameTime > 0)
             {
-                // Vänta rätt antal millisekunder innan loopens nästa varv
+                //Antal millisekunder före nästa cirkel i slingan
                 Thread.Sleep((int)frameTime);
             }
         }
     }
 
     static void Main(string[] args)
-    {
-        
-        // Vi kan ev. ha någon meny här, men annars börjar vi bara spelet direkt
+    {               
         Loop();
     }
 }
