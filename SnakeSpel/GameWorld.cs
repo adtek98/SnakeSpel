@@ -43,10 +43,9 @@ namespace SnakeSpel
                 gameObjects.RemoveAt(1);
                 Score++;
             }
-<<<<<<< HEAD
+          
+           
 
-=======
->>>>>>> fd53f830d6542fc8c9a7ec986a43d39534506e71
         }
         /// <summary>
         /// Adds player to the gameworld
