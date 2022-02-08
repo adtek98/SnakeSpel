@@ -32,7 +32,6 @@ namespace SnakeSpel
                 Console.SetCursorPosition(Object.Position.X, Object.Position.Y); //Beteckning för varje objekts position                
                 Console.Write(Object.Appearance); //Utseendebeteckning för ett objekt                
             }
-
         }
 
         /// <summary>
